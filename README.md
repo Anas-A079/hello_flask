@@ -40,8 +40,3 @@ You should see the message with the MySQL version.
 - MySQL container uses root password: `my-secret-pw`
 - Flask app connects to MySQL using container name `mydb`
 
----
-
-## License
-
-MIT License
