@@ -4,27 +4,10 @@ A simple **Flask** application running in a **Docker multi-stage build** environ
 
 ---
 
-## Project Structure
+## Description
 
-hello_flask/
-│
-├── app.py                 # Flask application
-├── Dockerfile             # Multi-stage Docker build
-├── docker-compose.yml     # Docker Compose setup
-├── aws/                   # Optional AWS CLI or scripts
-│   ├── install
-│   ├── wheel-0.45.1.dist-info/
-│   └── awscliv2.zip
-└── README.md              # Project documentation
-
----
-
-## Features
-
-- Flask application running in Docker.
-- MySQL container for database integration.
-- Multi-stage Docker build for smaller final image.
-- Connects Flask to MySQL using `mysqlclient`.
+This project demonstrates a Flask application containerized using Docker with a MySQL backend.  
+It uses a multi-stage Docker build to produce a lightweight final image. The Flask app connects to MySQL using the `mysqlclient` library.
 
 ---
 
@@ -35,31 +18,30 @@ hello_flask/
 
 ---
 
-## How to Run
+## Common Commands
 
-1. **Build the Docker images**:
+### Build Docker images
+docker compose build --no-cache
 
-    docker compose build --no-cache
+### Start containers
+docker compose up
 
-2. **Start the containers**:
+### Stop containers
+docker compose down
 
-    docker compose up
-
-3. **Access the Flask app**:
-
-Open your browser at [http://localhost:5000](http://localhost:5000).  
+### Access Flask app
+Open your browser at [http://localhost:5000](http://localhost:5000)  
 You should see the message with the MySQL version.
 
 ---
 
 ## Notes
 
-- MySQL container uses root password: `my-secret-pw`.
-- Flask app connects to MySQL using container name `mydb`.
+- MySQL container uses root password: `my-secret-pw`
+- Flask app connects to MySQL using container name `mydb`
 
 ---
 
 ## License
 
 MIT License
-
