@@ -24,33 +24,42 @@ It uses `mysqlclient` to connect to the database.
 ```bash
 docker build -t my-flask-app:latest .
 ```
+
 ### Build using docker-compose
+```bash
 docker compose build
+```
 
 ### Build with no cache
 ```bash
 docker compose build --no-cache
 ```
+
 ### Start containers
 ```bash
 docker compose up
 ```
+
 ### Start containers in detached mode
 ```bash
 docker compose up -d
 ```
+
 ### Stop containers
 ```bash
 docker compose down
 ```
+
 ### Stop and remove containers, networks, volumes, and images created by `up`
 ```bash
 docker compose down --rmi all -v
 ```
+
 ### Restart containers
 ```bash
 docker compose restart
 ```
+
 ### View logs
 ```bash
 docker compose logs
@@ -58,6 +67,7 @@ docker compose logs
 ```bash
 docker compose logs -f   # follow logs in real-time
 ```
+
 ### List running containers
 ```bash
 docker ps
@@ -65,14 +75,17 @@ docker ps
 ```bash
 docker compose ps
 ```
+
 ### Enter a running container
 ```bash
 docker exec -it <container_name> bash
 ```
+
 ### Remove a container
 ```bash
 docker rm <container_name>
 ```
+
 ### Remove an image
 ```bash
 docker rmi <image_name>
