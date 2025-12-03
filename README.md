@@ -94,7 +94,7 @@ docker rmi <image_name>
 
 ## Access the Flask App
 
-Open your browser at [http://localhost:5000](http://localhost:5000)  
+Open your browser at [http://localhost:5000](http://localhost:3000)  
 You should see the message with the MySQL version.
 
 ---
